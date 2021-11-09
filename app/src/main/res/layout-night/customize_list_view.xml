@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/customize_Rout_Number"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:text="Rout Number"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/customize_Source_Point"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/customize_Rout_Number"
+        android:layout_toRightOf="@id/customize_Rout_Number"
+        android:background="@drawable/border"
+        android:text="Source Point"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/customize_Destination_Point"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/customize_Source_Point"
+        android:layout_toRightOf="@id/customize_Source_Point"
+        android:background="@drawable/border"
+        android:text="Destination Point"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

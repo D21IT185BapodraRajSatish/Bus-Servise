@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recharge_crad">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FRAGMENT_AMOUNT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:hint="Amount"
+        android:isScrollContainer="true"
+        android:theme="@style/TEXTINPUTLAYOUT"
+        app:boxBackgroundColor="#0000"
+        app:boxBackgroundMode="outline"
+        app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FRAGMENT_AMOUNT1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FRAGMENT_CARD_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FRAGMENT_AMOUNT"
+        android:layout_margin="9dp"
+        android:hint="Card ID"
+        android:isScrollContainer="true"
+        android:theme="@style/TEXTINPUTLAYOUT"
+        app:boxBackgroundColor="#0000"
+        app:boxBackgroundMode="outline"
+        app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FRAGMENT_CARD_ID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.ekalips.fancybuttonproj.FancyButton
+        android:id="@+id/FRAGMENT_RECHARGE_BTN"
+        android:layout_margin="9dp"
+        style="@style/BTN1"
+        android:paddingLeft="5dp"
+        android:paddingBottom="3dp"
+        android:layout_alignRight="@id/FRAGMENT_CARD_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/FRAGMENT_CARD_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:f_hideFillAfterCollapse="false"
+        app:f_text="RECHARGE"
+        app:f_textSize="15sp" />
+
+    <!--<Button
+        android:padding="10dp"
+        android:id="@+id/FRAGMENT_RECHARGE_BTN"
+        style="@style/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FRAGMENT_CARD_ID"
+        android:layout_alignRight="@id/FRAGMENT_CARD_ID"
+        android:layout_margin="9dp"
+        android:text="RECHARGE" />
+
+        <Button
+        android:padding="10dp"
+        android:id="@+id/FRAGMENT_RECHARGE_GET_ID_BTN"
+        style="@style/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FRAGMENT_CARD_ID"
+        android:layout_alignLeft="@id/FRAGMENT_CARD_ID"
+        android:layout_margin="9dp"
+        android:text="GET CARD ID" />-->
+
+    <com.ekalips.fancybuttonproj.FancyButton
+        android:id="@+id/FRAGMENT_RECHARGE_GET_ID_BTN"
+        android:layout_margin="9dp"
+        style="@style/BTN1"
+        android:paddingLeft="5dp"
+        android:paddingBottom="3dp"
+        android:layout_alignLeft="@id/FRAGMENT_CARD_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/FRAGMENT_CARD_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:f_hideFillAfterCollapse="false"
+        app:f_text="Get Card ID"
+        app:f_textSize="15sp" />
+
+</RelativeLayout>

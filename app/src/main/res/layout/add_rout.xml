@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Rout">
+
+    <FrameLayout
+        android:id="@+id/R_R_FRAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Rout_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:hint="Rout Number"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Rout_Number1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/First_Point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Rout_Number"
+                    android:layout_margin="9dp"
+                    android:hint="First Point"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/First_Point1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Last_Point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/First_Point"
+                    android:layout_margin="9dp"
+                    android:hint="Last Point"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Last_Point1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Kilo_Meter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Last_Point"
+                    android:layout_margin="9dp"
+                    android:hint="Kilo Meter"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Kilo_Meter1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.ekalips.fancybuttonproj.FancyButton
+                    android:id="@+id/FRG2_Btn_Submit"
+                    style="@style/BTN1"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/Kilo_Meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:f_hideFillAfterCollapse="false"
+                    app:f_text="submit"
+                    app:f_textSize="15sp" />
+
+                <!--<Button
+                    android:id="@+id/FRG2_Btn_Submit1"
+                    style="@style/BTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Kilo_Meter"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textSize="15sp" />-->
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/FRG2_Lst_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_R_FRAME"
+        android:clickable="false"
+        android:longClickable="false" />
+
+    <ListView
+        android:id="@+id/FRG2_Lst_Main_Act"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/FRG2_Lst_Title" />
+</RelativeLayout>

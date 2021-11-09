@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable-night/cornor.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable-night/custom_btn.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable-night/dailod_box.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable-notnight/cornor.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable-notnight/dailod_box.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/drawable/custom_btn.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout-night/no_internet_dilog.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout-notnight/no_internet_dilog.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout/add_conductor.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout/add_rout.xml" value="0.1287037037037037" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout/add_sub_rout.xml" value="0.1287037037037037" />
+        <entry key="..\:/AndroidStudioProject/Proto_Type_1/app/src/main/res/layout/isssue_card.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ISSUE_CARD"
+        android:title="ISSUE CARD"
+        android:icon="@drawable/ic_card_rfid"/>
+
+    <item
+        android:id="@+id/RECHARGE_CARD"
+        android:title="RECHARGE CARD"
+        android:icon="@drawable/ic_rupee"/>
+    <item
+        android:id="@+id/ADD_ROUT"
+        android:title="ADD ROUT"
+        android:icon="@drawable/bus_stop"/>
+    <item
+        android:id="@+id/ADD_CONDUCTOR"
+        android:title="ADD Conductor"
+        android:icon="@drawable/ic_add_conductor"/>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Sub_Rout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_RSR"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/Toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignStart="@id/Sub_Rout_Name"
+        android:layout_below="@id/toolbar_RSR"
+        android:id="@+id/Register_Sub_rout_Kilometre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Kilometer : "
+        android:textColor="@color/Dark_Brown"
+        android:textSize="30dp"
+        android:layout_alignLeft="@id/Sub_Rout_Name" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar_RSR"
+        android:id="@+id/Register_Sub_rout_Kilometre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Register_Sub_rout_Kilometre"
+        android:text="0.0"
+        android:textColor="@color/Dark_Brown"
+        android:textSize="30dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Sub_Rout_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_Sub_rout_Kilometre"
+        android:layout_margin="9dp"
+        android:hint="Stop Name"
+        android:isScrollContainer="true"
+        android:theme="@style/TEXTINPUTLAYOUT"
+        app:boxBackgroundColor="#0000"
+        app:boxBackgroundMode="outline"
+        app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Sub_Rout_Name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Sub_Rout_Kilo_Meter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sub_Rout_Name"
+        android:layout_margin="9dp"
+        android:hint="Kilo Meter"
+        android:isScrollContainer="true"
+        android:theme="@style/TEXTINPUTLAYOUT"
+        app:boxBackgroundColor="#0000"
+        app:boxBackgroundMode="outline"
+        app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Sub_Rout_Kilo_Meter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.ekalips.fancybuttonproj.FancyButton
+        android:id="@+id/RSR_ADD"
+        style="@style/BTN1"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Sub_Rout_Kilo_Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:f_hideFillAfterCollapse="false"
+        app:f_text="submit"
+        app:f_textSize="15sp" />
+
+    <!--<Button
+        android:id="@+id/RSR_ADD"
+        style="@style/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sub_Rout_Kilo_Meter"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp" />-->
+
+    <ListView
+        android:id="@+id/RSR_Lst_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RSR_ADD"
+        android:clickable="false"
+        android:longClickable="false" />
+
+    <ListView
+        android:id="@+id/RSR_LST"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RSR_Lst_Title" />
+
+</RelativeLayout>

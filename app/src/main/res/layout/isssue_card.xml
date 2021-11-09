@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isssue_card">
+
+    <ScrollView
+        android:id="@+id/SC_VIEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/SC_VIEW"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/First_NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:hint="First Name"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/First_NAME1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Last_NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/First_NAME"
+                android:layout_margin="9dp"
+                android:hint="Last Name"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Last_NAME1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Last_NAME"
+                android:layout_alignLeft="@id/Last_NAME"
+                android:layout_marginTop="25px"
+                android:text="Gender"
+                android:textAppearance="@style/TXT_VIEW"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/RBG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Last_NAME"
+                android:layout_toEndOf="@id/gender"
+                android:layout_toRightOf="@id/gender"
+                android:checkedButton="@id/male"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/imgbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/RBG"
+                android:layout_alignRight="@id/First_NAME"
+                android:layout_margin="9dp"
+                android:background="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_alignBaseline="@id/imgbtn"
+                android:layout_alignTop="@id/imgbtn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_toLeftOf="@id/imgbtn"
+                android:text="dd-mm-yy"
+                android:textAppearance="@style/TXT_VIEW"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Phone_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbtn"
+                android:layout_margin="9dp"
+                android:hint="Phone Number"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Phone_Number1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Phone_Number"
+                android:layout_margin="9dp"
+                android:hint="Email"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Email"
+                android:layout_margin="9dp"
+                android:hint="Address"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/TxtintAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Address"
+                android:layout_marginLeft="9dp"
+                android:paddingTop="20dp"
+                android:text="₹ 50 +"
+                android:textColor="@color/Dark_Brown"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Initial_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Address"
+                android:layout_margin="9dp"
+                android:layout_toEndOf="@id/TxtintAmount"
+                android:layout_toRightOf="@id/TxtintAmount"
+                android:hint="Initial_Amount"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Initial_Amount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Card_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Initial_Amount"
+                android:layout_margin="9dp"
+                android:hint="Card ID"
+                android:isScrollContainer="true"
+                android:theme="@style/TEXTINPUTLAYOUT"
+                app:boxBackgroundColor="#0000"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Card_ID1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<Button
+                android:padding="10dp"
+                android:id="@+id/Get_Card_ID"
+                style="@style/BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Card_ID"
+                android:layout_alignLeft="@id/Card_ID"
+                android:text="Get Card ID" />-->
+
+            <!--<Button
+                android:id="@+id/Submit"
+                style="@style/BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Card_ID"
+                android:layout_alignRight="@id/Card_ID"
+                android:text="SUBMIT" />-->
+
+            <com.ekalips.fancybuttonproj.FancyButton
+                android:id="@+id/Get_Card_ID"
+                style="@style/BTN1"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:layout_alignLeft="@id/Card_ID"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Card_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:f_hideFillAfterCollapse="false"
+                app:f_text="Get Card ID"
+                app:f_textSize="15sp" />
+
+            <com.ekalips.fancybuttonproj.FancyButton
+                android:id="@+id/Submit"
+                style="@style/BTN1"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@id/Card_ID"
+                android:layout_below="@id/Card_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:f_hideFillAfterCollapse="false"
+                app:f_text="submit"
+                app:f_textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
